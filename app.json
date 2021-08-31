@@ -1,7 +1,7 @@
 {
   "logo":"https://telegra.ph/file/91003e77f23a2f2a03229.jpg",
-  "name": "Mention All Bot",
-  "description": "A simple mention all for telegram.",
+  "name": "MEMBER TAGGER",
+  "description": "A member tagger bot for telegram Groups.",
   "env": {
     "TOKEN": {
       "description": "Enter bot token.",
