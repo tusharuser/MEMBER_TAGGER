@@ -17,25 +17,27 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("__**Im MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more infomation__\n\n Follow [@AnjanaMadu](https://github.com/AnjanaMadu) on Github",
+  await event.reply("** I am member Tagger **, I can Tag almost all members in group or channel 🤓\nClick **/help** for more infomation.\n\n Here is my [Developer👨‍💻](https://t.me/XD_PERSON)",
                     buttons=(
-                      [Button.url('📣 Channel', 'https://t.me/harp_tech'),
-                      Button.url('📦 Source', 'https://github.com/AnjanaMadu/MentionAllBot')]
+                      [Button.url('🛡SUPPORT GROUP🛡', 'https://t.me/MARATHIWARRIORS'),
+                      Button.url('🖲 UPDATE CHANNEL 🖲', 'https://t.me/MARATH_IWARRIORS'),
+                      Button.url('📠 SOURCE CODE 📠', 'https://github.com/tana9373/MEMBER_TAGGER')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [@AnjanaMadu](https://github.com/AnjanaMadu) on Github"
+  helptext = "**Hey 🤓 \n\n You can Tag members by using Commands shown below,\n\n /all text \n\n @all text \n\n #all text**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('📣 Channel', 'https://t.me/harp_tech'),
-                      Button.url('📦 Source', 'https://github.com/AnjanaMadu/MentionAllBot')]
+                      [Button.url('🛡SUPPORT GROUP🛡', 'https://t.me/MARATHIWARRIORS'),
+                      Button.url('🖲UPDATE CHANNEL🖲', 'https://t.me/MARATH_IWARRIORS'),
+                      Button.url('📠 SOURCE CODE📠', 'https://github.com/tana9373/MEMBER_TAGGER')]
                     ),
                     link_preview=False
                    )
   
-@client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
+@client.on(events.NewMessage(pattern="^/all|@all|#all ?(.*)"))
 async def mentionall(event):
   if event.is_private:
     return await event.respond("__This command can be use in groups and channels!__")
@@ -44,7 +46,7 @@ async def mentionall(event):
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.respond("__Only admins can mention all!__")
+    return await event.respond("🔴 YOU ARE NOT AN ADMIN IN THESE GROUP")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
@@ -57,7 +59,7 @@ async def mentionall(event):
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
     return await event.respond("__Give me one argument!__")
   else:
-    return await event.respond("__Reply to a message or give me some text to mention others!__")
+    return await event.respond("GIVE ME A TEXT TO TAG MEMBERS OR REPLY TO A TEXT WHICH YOU WANTS TO TAG ALL")
   
   if mode == "text_on_cmd":
     usrnum = 0
