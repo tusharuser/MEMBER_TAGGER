@@ -12,4 +12,4 @@ _**This bot can mention members upto 10,000 in groups and can mention members up
 - [ANJANA MADU](https://github.com/AnjanaMadu) 
 - [TANAJI](https://t.me/XD_PERSON)
 
-**Do not forget to fork The repo And to give a start 🤓**
+**Do not forget to fork The repo And to give a star ⭐⭐**
