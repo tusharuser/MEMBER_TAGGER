@@ -1,1 +1,1 @@
-bot: python3 mention.py
+bot: python3 member.py
