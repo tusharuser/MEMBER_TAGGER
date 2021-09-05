@@ -25,7 +25,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Hey 🤓 \n\n You can Tag members by using Commands shown below,\n\n /all text \n\n @all text \n\n #all text**"
+  helptext = "**Hey 🤓 I Am Member Tagger \n\n You can Tag members by using Commands shown below,\n\n /all text \n\n @all text \n\n #all text**"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('📣 UPDATE CHANNEL', 'https://t.me/MEMBERTAGGERUPDATES')]
