@@ -33,7 +33,7 @@ async def help(event):
                     link_preview=False
                    )
   
-@client.on(events.NewMessage(pattern="^#all|@all|/all ?(.*)"))
+@client.on(events.NewMessage(pattern="^/tagall|#all|@all|/all ?(.*)"))
 async def mentionall(event):
   if event.is_private:
     return await event.respond("__This command can be use in groups and channels!__")
