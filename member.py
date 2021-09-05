@@ -20,8 +20,7 @@ async def start(event):
   await event.reply("** I am member Tagger **, I can Tag almost all members in group or channel 🤓\nClick **/help** for more infomation.\n\n Here is my [Developer👨‍💻](https://t.me/XD_PERSON)",
                     buttons=(
                       [Button.url('🛡SUPPORT GROUP🛡', 'https://t.me/MARATHIWARRIORS'),
-                      Button.url('🖲 UPDATE CHANNEL 🖲', 'https://t.me/MARATH_IWARRIORS'),
-                      Button.url('📠 SOURCE CODE 📠', 'https://github.com/tana9373/MEMBER_TAGGER')]
+                      Button.url('🖲 UPDATE CHANNEL 🖲', 'https://t.me/MARATH_IWARRIORS')]
                     ),
                     link_preview=False
                    )
@@ -31,8 +30,7 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🛡SUPPORT GROUP🛡', 'https://t.me/MARATHIWARRIORS'),
-                      Button.url('🖲UPDATE CHANNEL🖲', 'https://t.me/MARATH_IWARRIORS'),
-                      Button.url('📠 SOURCE CODE📠', 'https://github.com/tana9373/MEMBER_TAGGER')]
+                      Button.url('🖲UPDATE CHANNEL🖲', 'https://t.me/MARATH_IWARRIORS')]
                     ),
                     link_preview=False
                    )
