@@ -10,7 +10,7 @@ _**This bot can mention members upto 10,000 in groups and can mention members up
 - @all text 
 
 ### 🚀 Deploy to heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/tana9373/MEMBER_TAGGER)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/tusharuser/MEMBER_TAGGER)
 
 ### ⚜ Credits and Other
 - [ANJANA MADU](https://github.com/AnjanaMadu) 
