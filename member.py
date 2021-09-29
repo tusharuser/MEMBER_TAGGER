@@ -10,9 +10,9 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
-api_id = 5891777
-api_hash = "64fa91f5fafd43a3b9dc504f0e2a4d70"
-bot_token = "2027596455:AAGzAUS3Gjs7sGkFK81t5f6Usm6J0RTqrvs"
+api_id = 8484355
+api_hash = "9982ed6d69bca5a5015c30df91870262"
+bot_token = "1951140204:AAEvlApSsNvUdBbGQ8v4BVTyZX0gv1HG2bI"
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern="^/start$"))
